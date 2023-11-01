@@ -5,7 +5,6 @@ const markup = createGalleryMarkup(galleryItems);
 container.insertAdjacentHTML('beforeend', markup);
 container.addEventListener('click', onImgClick);
 
-// rendered items
 function createGalleryMarkup(items) {
   return items
     .map(({ preview, original, description }) => {
